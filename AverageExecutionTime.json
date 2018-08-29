@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "AWIfVx_L_uTv-sBGEvfd",
+    "_type": "visualization",
+    "_source": {
+      "title": "Average Execution Time (hours)",
+      "visState": "{\"title\":\"Average Execution Time (hours)\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Robots\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Average Ex Time (hours)\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Average Ex Time (hours)\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"totalExecutionTimeInSeconds\",\"json\":\"{\\\"script\\\":\\\"_value/3600\\\"}\",\"customLabel\":\"Average Ex Time (hours)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"robotName.keyword\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Robots\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"processName.keyword\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Process\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(165,0,38)\",\"50 - 100\":\"rgb(0,104,55)\"}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV7h3XLhPuI9K3Kmr_bt\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
